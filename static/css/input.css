@@ -3,5 +3,11 @@
 @import "tailwindcss";
 
 @theme {
-    --font-montserrat: "Montserrat", sans-serif;
+    --color-brand: #26A69A;
+    --color-brand-dark: #218F86;
+    --color-brand-light: #5FC8BE;
+
+    --color-ink: #18312F;
+
+    --color-cream: #F7F5F1;
 }
