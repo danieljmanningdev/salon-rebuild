@@ -19,6 +19,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
@@ -304,6 +305,9 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
   .block {
     display: block;
   }
@@ -405,6 +409,9 @@
   .max-w-md {
     max-width: var(--container-md);
   }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
@@ -425,6 +432,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-\[auto_1fr\] {
+    grid-template-columns: auto 1fr;
   }
   .flex-col {
     flex-direction: column;
@@ -487,11 +497,19 @@
     margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
   }
+  :where(.space-y-7 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 7) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-y-reverse)));
+  }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
   }
   .gap-y-8 {
     row-gap: calc(var(--spacing) * 8);
@@ -541,6 +559,9 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-\[\#5FC8BE\] {
+    border-color: #5FC8BE;
+  }
   .border-\[\#218F86\] {
     border-color: #218F86;
   }
@@ -575,6 +596,12 @@
     border-color: color-mix(in srgb, #fff 15%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
   .border-white\/25 {
@@ -619,6 +646,9 @@
   .bg-\[\#35a599\]\/95 {
     background-color: color-mix(in oklab, #35a599 95%, transparent);
   }
+  .bg-\[\#102E2B\] {
+    background-color: #102E2B;
+  }
   .bg-\[\#218F86\] {
     background-color: #218F86;
   }
@@ -642,6 +672,9 @@
   }
   .bg-\[\#FAFAF8\] {
     background-color: #FAFAF8;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-black\/45 {
     background-color: color-mix(in srgb, #000 45%, transparent);
@@ -735,6 +768,9 @@
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
   }
@@ -756,6 +792,12 @@
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
+  }
   .pb-1 {
     padding-bottom: var(--spacing);
   }
@@ -776,6 +818,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-right {
+    text-align: right;
   }
   .font-sans {
     font-family: var(--font-sans);
@@ -1003,6 +1048,12 @@
   .text-white {
     color: var(--color-white);
   }
+  .text-white\/35 {
+    color: color-mix(in srgb, #fff 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 35%, transparent);
+    }
+  }
   .text-white\/40 {
     color: color-mix(in srgb, #fff 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1066,6 +1117,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .not-italic {
+    font-style: normal;
+  }
   .shadow-\[0_4px_24px_rgba\(0\,0\,0\,0\.08\)\] {
     --tw-shadow: 0 4px 24px var(--tw-shadow-color, rgba(0,0,0,0.08));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1120,6 +1174,9 @@
     }
     .group-hover\:text-\[\#218F86\]:is(:where(.group):hover *) {
       color: #218F86;
+    }
+    .hover\:border-\[\#5FC8BE\]:hover {
+      border-color: #5FC8BE;
     }
     .hover\:border-\[\#176F69\]:hover {
       border-color: #176F69;
@@ -1178,6 +1235,9 @@
     .hover\:px-4:hover {
       padding-inline: calc(var(--spacing) * 4);
     }
+    .hover\:text-\[\#5FC8BE\]:hover {
+      color: #5FC8BE;
+    }
     .hover\:text-\[\#176F69\]:hover {
       color: #176F69;
     }
@@ -1230,6 +1290,10 @@
       width: calc(var(--spacing) * 12);
       height: calc(var(--spacing) * 12);
     }
+    .sm\:size-14 {
+      width: calc(var(--spacing) * 14);
+      height: calc(var(--spacing) * 14);
+    }
     .sm\:h-14 {
       height: calc(var(--spacing) * 14);
     }
@@ -1244,6 +1308,9 @@
     }
     .sm\:items-center {
       align-items: center;
+    }
+    .sm\:justify-between {
+      justify-content: space-between;
     }
     .sm\:gap-3 {
       gap: calc(var(--spacing) * 3);
@@ -1262,8 +1329,14 @@
     .sm\:gap-x-6 {
       column-gap: calc(var(--spacing) * 6);
     }
+    .sm\:gap-x-10 {
+      column-gap: calc(var(--spacing) * 10);
+    }
     .sm\:gap-y-12 {
       row-gap: calc(var(--spacing) * 12);
+    }
+    .sm\:gap-y-14 {
+      row-gap: calc(var(--spacing) * 14);
     }
     .sm\:border-r {
       border-right-style: var(--tw-border-style);
@@ -1289,6 +1362,9 @@
     }
     .sm\:pb-12 {
       padding-bottom: calc(var(--spacing) * 12);
+    }
+    .sm\:pb-16 {
+      padding-bottom: calc(var(--spacing) * 16);
     }
     .sm\:text-4xl {
       font-size: var(--text-4xl);
@@ -1415,6 +1491,9 @@
     .lg\:grid-cols-\[0\.65fr_1\.35fr\] {
       grid-template-columns: 0.65fr 1.35fr;
     }
+    .lg\:grid-cols-\[1fr_1fr_1\.25fr\] {
+      grid-template-columns: 1fr 1fr 1.25fr;
+    }
     .lg\:flex-row {
       flex-direction: row;
     }
@@ -1444,6 +1523,12 @@
       border-bottom-style: var(--tw-border-style);
       border-bottom-width: 0px;
     }
+    .lg\:py-16 {
+      padding-block: calc(var(--spacing) * 16);
+    }
+    .lg\:py-24 {
+      padding-block: calc(var(--spacing) * 24);
+    }
     .lg\:py-28 {
       padding-block: calc(var(--spacing) * 28);
     }
@@ -1452,6 +1537,9 @@
     }
     .lg\:pr-16 {
       padding-right: calc(var(--spacing) * 16);
+    }
+    .lg\:text-right {
+      text-align: right;
     }
     .lg\:text-5xl {
       font-size: var(--text-5xl);
