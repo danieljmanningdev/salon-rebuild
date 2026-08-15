@@ -910,6 +910,9 @@
     .hover\:bg-\[\#218F86\]:hover {
       background-color: #218F86;
     }
+    .hover\:bg-white:hover {
+      background-color: var(--color-white);
+    }
     .hover\:text-\[\#5FC8BE\]:hover {
       color: #5FC8BE;
     }
