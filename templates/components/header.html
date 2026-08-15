@@ -2,10 +2,9 @@
 <header
     class="
         sticky top-0 z-50
-        border-b border-white/15
-        bg-[#218F86]/95
+        border-b border-[#18312F]/10
+        bg-[#FAF9F6]/95
         font-sans
-        shadow-[0_4px_24px_rgba(0,0,0,0.08)]
         backdrop-blur-xl
     "
 >
@@ -15,30 +14,24 @@
             <!-- Brand -->
             <a
                 href="/"
-                class="
-                    flex min-w-0 items-center gap-2.5
-                    sm:gap-3
-                "
+                class="flex min-w-0 items-center gap-3"
                 aria-label="Studio Hair & Beauty home"
             >
                 <img
                     src="/static/images/logo.svg"
                     alt=""
-                    class="
-                        size-11 shrink-0
-                        sm:size-12
-                        lg:size-14
-                    "
+                    class="size-11 shrink-0 sm:size-12 lg:size-14"
                     aria-hidden="true"
                 >
 
-                <div class="min-w-0 leading-none text-white">
+                <div class="min-w-0 leading-none">
                     <span
                         class="
-                            block truncate
+                            block
                             text-[0.95rem]
                             font-medium
                             tracking-[0.08em]
+                            text-[#18312F]
                             sm:text-base
                             lg:text-lg
                         "
@@ -50,10 +43,10 @@
                         class="
                             mt-1.5 block
                             text-[0.55rem]
-                            font-medium
+                            font-semibold
                             uppercase
                             tracking-[0.28em]
-                            text-white/65
+                            text-[#218F86]
                             sm:text-[0.6rem]
                         "
                     >
@@ -68,26 +61,17 @@
                     <ul
                         class="
                             flex items-center gap-8
-                            text-[0.78rem]
-                            font-medium
+                            text-[0.72rem]
+                            font-semibold
                             uppercase
-                            tracking-[0.12em]
-                            text-white/75
+                            tracking-[0.14em]
+                            text-[#18312F]/65
                         "
                     >
                         <li>
                             <a
                                 href="/"
-                                class="
-                                    border-b border-transparent
-                                    pb-1.5
-                                    transition
-                                    hover:border-white/60
-                                    hover:text-white
-                                    focus-visible:outline-2
-                                    focus-visible:outline-offset-4
-                                    focus-visible:outline-white
-                                "
+                                class="transition hover:text-[#218F86]"
                             >
                                 Home
                             </a>
@@ -96,16 +80,7 @@
                         <li>
                             <a
                                 href="/services"
-                                class="
-                                    border-b border-transparent
-                                    pb-1.5
-                                    transition
-                                    hover:border-white/60
-                                    hover:text-white
-                                    focus-visible:outline-2
-                                    focus-visible:outline-offset-4
-                                    focus-visible:outline-white
-                                "
+                                class="transition hover:text-[#218F86]"
                             >
                                 Services
                             </a>
@@ -114,16 +89,7 @@
                         <li>
                             <a
                                 href="/gallery"
-                                class="
-                                    border-b border-transparent
-                                    pb-1.5
-                                    transition
-                                    hover:border-white/60
-                                    hover:text-white
-                                    focus-visible:outline-2
-                                    focus-visible:outline-offset-4
-                                    focus-visible:outline-white
-                                "
+                                class="transition hover:text-[#218F86]"
                             >
                                 Gallery
                             </a>
@@ -132,16 +98,7 @@
                         <li>
                             <a
                                 href="/team"
-                                class="
-                                    border-b border-transparent
-                                    pb-1.5
-                                    transition
-                                    hover:border-white/60
-                                    hover:text-white
-                                    focus-visible:outline-2
-                                    focus-visible:outline-offset-4
-                                    focus-visible:outline-white
-                                "
+                                class="transition hover:text-[#218F86]"
                             >
                                 Our Team
                             </a>
@@ -150,16 +107,7 @@
                         <li>
                             <a
                                 href="/contact"
-                                class="
-                                    border-b border-transparent
-                                    pb-1.5
-                                    transition
-                                    hover:border-white/60
-                                    hover:text-white
-                                    focus-visible:outline-2
-                                    focus-visible:outline-offset-4
-                                    focus-visible:outline-white
-                                "
+                                class="transition hover:text-[#218F86]"
                             >
                                 Contact
                             </a>
@@ -171,60 +119,53 @@
                     href="/contact"
                     class="
                         inline-flex items-center justify-center
-                        border border-white/70
+                        bg-[#218F86]
                         px-6 py-3
-                        text-[0.72rem]
+                        text-[0.7rem]
                         font-semibold
                         uppercase
-                        tracking-[0.16em]
+                        tracking-[0.18em]
                         text-white
                         transition
-                        hover:bg-white
-                        hover:text-[#218F86]
-                        focus-visible:outline-2
-                        focus-visible:outline-offset-4
-                        focus-visible:outline-white
+                        hover:bg-[#197A73]
                     "
                 >
                     Book Now
                 </a>
             </div>
 
-            <!-- Mobile menu -->
+            <!-- Mobile -->
             <details class="group relative shrink-0 lg:hidden">
                 <summary
                     class="
                         flex cursor-pointer list-none
                         items-center justify-center
-                        border border-white/25
                         p-2
-                        text-white
+                        text-[#18312F]
                         transition
-                        hover:bg-white/10
+                        hover:text-[#218F86]
                     "
                     aria-label="Toggle navigation"
                 >
-                    <!-- Hamburger -->
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="1.5"
                         stroke-linecap="round"
-                        class="size-6 group-open:hidden"
+                        class="size-7 group-open:hidden"
                         aria-hidden="true"
                     >
                         <path d="M4 7h16M4 12h16M4 17h16"></path>
                     </svg>
 
-                    <!-- Close -->
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="1.5"
                         stroke-linecap="round"
-                        class="hidden size-6 group-open:block"
+                        class="hidden size-7 group-open:block"
                         aria-hidden="true"
                     >
                         <path d="M6 6l12 12M18 6L6 18"></path>
@@ -236,20 +177,18 @@
                         absolute right-0 top-full
                         mt-4
                         w-[min(22rem,calc(100vw-2rem))]
-                        overflow-hidden
-                        border border-black/5
-                        bg-[#FAFAF8]
-                        shadow-[0_20px_60px_rgba(0,0,0,0.18)]
+                        border border-[#18312F]/10
+                        bg-[#FAF9F6]
+                        shadow-[0_24px_70px_rgba(24,49,47,0.18)]
                     "
                     aria-label="Mobile navigation"
                 >
 
-                    <!-- Mobile menu branding -->
+                    <!-- Brand -->
                     <div
                         class="
                             flex items-center gap-3
-                            border-b border-[#218F86]/15
-                            bg-[#218F86]/5
+                            border-b border-[#18312F]/10
                             px-5 py-5
                         "
                     >
@@ -263,11 +202,10 @@
                         <div class="leading-none">
                             <span
                                 class="
-                                    block
-                                    text-base
+                                    block text-base
                                     font-medium
                                     tracking-[0.06em]
-                                    text-[#176F69]
+                                    text-[#18312F]
                                 "
                             >
                                 Studio Hair
@@ -280,7 +218,7 @@
                                     font-semibold
                                     uppercase
                                     tracking-[0.28em]
-                                    text-[#218F86]/65
+                                    text-[#218F86]
                                 "
                             >
                                 Hair & Beauty
@@ -288,102 +226,46 @@
                         </div>
                     </div>
 
-                    <!-- Links -->
                     <ul
                         class="
                             flex flex-col
-                            px-3 py-3
+                            px-5 py-4
                             text-sm
                             font-medium
-                            text-zinc-700
+                            text-[#18312F]/75
                         "
                     >
                         <li>
-                            <a
-                                href="/"
-                                class="
-                                    block
-                                    border-b border-zinc-200/70
-                                    px-3 py-4
-                                    tracking-wide
-                                    transition
-                                    hover:px-4
-                                    hover:text-[#218F86]
-                                "
-                            >
+                            <a href="/" class="block border-b border-[#18312F]/10 py-4 hover:text-[#218F86]">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="/services"
-                                class="
-                                    block
-                                    border-b border-zinc-200/70
-                                    px-3 py-4
-                                    tracking-wide
-                                    transition
-                                    hover:px-4
-                                    hover:text-[#218F86]
-                                "
-                            >
+                            <a href="/services" class="block border-b border-[#18312F]/10 py-4 hover:text-[#218F86]">
                                 Services
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="/gallery"
-                                class="
-                                    block
-                                    border-b border-zinc-200/70
-                                    px-3 py-4
-                                    tracking-wide
-                                    transition
-                                    hover:px-4
-                                    hover:text-[#218F86]
-                                "
-                            >
+                            <a href="/gallery" class="block border-b border-[#18312F]/10 py-4 hover:text-[#218F86]">
                                 Gallery
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="/team"
-                                class="
-                                    block
-                                    border-b border-zinc-200/70
-                                    px-3 py-4
-                                    tracking-wide
-                                    transition
-                                    hover:px-4
-                                    hover:text-[#218F86]
-                                "
-                            >
+                            <a href="/team" class="block border-b border-[#18312F]/10 py-4 hover:text-[#218F86]">
                                 Our Team
                             </a>
                         </li>
 
                         <li>
-                            <a
-                                href="/contact"
-                                class="
-                                    block
-                                    px-3 py-4
-                                    tracking-wide
-                                    transition
-                                    hover:px-4
-                                    hover:text-[#218F86]
-                                "
-                            >
+                            <a href="/contact" class="block py-4 hover:text-[#218F86]">
                                 Contact
                             </a>
                         </li>
                     </ul>
 
-                    <!-- Mobile CTA -->
                     <div class="px-5 pb-5">
                         <a
                             href="/contact"
@@ -404,27 +286,6 @@
                             Book an Appointment
                         </a>
                     </div>
-
-                    <!-- Small brand detail -->
-                    <div
-                        class="
-                            border-t border-zinc-200
-                            px-5 py-4
-                            text-center
-                        "
-                    >
-                        <p
-                            class="
-                                text-[0.6rem]
-                                uppercase
-                                tracking-[0.28em]
-                                text-zinc-400
-                            "
-                        >
-                            Look · Feel · Be You
-                        </p>
-                    </div>
-
                 </nav>
             </details>
 

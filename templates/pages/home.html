@@ -1,2 +1,976 @@
 {{ define "content" }}
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="relative isolate flex min-h-155 items-center overflow-hidden lg:min-h-170">
+
+    <img
+        src="/static/images/salon-hero.jpeg"
+        alt=""
+        class="absolute inset-0 -z-20 size-full object-cover object-center"
+        aria-hidden="true"
+    >
+
+    <!-- Keep the treatment simple: no heavy gradient -->
+    <div class="absolute inset-0 -z-10 bg-black/45"></div>
+
+    <div
+        class="
+            mx-auto w-full max-w-6xl
+            px-4 py-24
+            sm:px-6
+            lg:py-32
+        "
+    >
+        <div class="max-w-2xl text-white">
+
+            <p
+                class="
+                    text-[0.65rem]
+                    font-semibold
+                    uppercase
+                    tracking-[0.32em]
+                    text-white/70
+                "
+            >
+                Hair & Beauty · Darlington
+            </p>
+
+            <h1
+                class="
+                    mt-6
+                    text-4xl
+                    font-medium
+                    leading-[1.08]
+                    tracking-[-0.04em]
+                    sm:text-5xl
+                    lg:text-6xl
+                "
+            >
+                Great hair.
+                <br>
+                Beautifully you.
+            </h1>
+
+            <p
+                class="
+                    mt-6
+                    max-w-lg
+                    text-base
+                    leading-8
+                    text-white/75
+                    sm:text-lg
+                "
+            >
+                Contemporary hair and beauty treatments delivered with
+                expertise, care and an experience centred around you.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center gap-7">
+                <a
+                    href="/contact"
+                    class="
+                        inline-flex
+                        bg-[#26A69A]
+                        px-7 py-4
+                        text-[0.7rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.18em]
+                        text-white
+                        transition
+                        hover:bg-[#218F86]
+                        focus-visible:outline-2
+                        focus-visible:outline-offset-4
+                        focus-visible:outline-white
+                    "
+                >
+                    Book an Appointment
+                </a>
+
+                <a
+                    href="/services"
+                    class="
+                        border-b border-white/50
+                        pb-1
+                        text-[0.7rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.16em]
+                        text-white/85
+                        transition
+                        hover:border-white
+                        hover:text-white
+                    "
+                >
+                    Explore Services
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+<section class="bg-[#F7F5F1]">
+    <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:py-32">
+
+        <div
+            class="
+                flex flex-col gap-8
+                border-b border-[#18312F]/10
+                pb-12
+                md:flex-row
+                md:items-end
+                md:justify-between
+            "
+        >
+            <div class="max-w-2xl">
+                <p
+                    class="
+                        text-[0.65rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.3em]
+                        text-[#218F86]
+                    "
+                >
+                    Our Services
+                </p>
+
+                <h2
+                    class="
+                        mt-5
+                        text-3xl
+                        font-medium
+                        leading-tight
+                        tracking-[-0.03em]
+                        text-[#18312F]
+                        sm:text-4xl
+                        lg:text-5xl
+                    "
+                >
+                    Everything you need,
+                    <span class="text-[#18312F]/45">
+                        all in one studio.
+                    </span>
+                </h2>
+            </div>
+
+            <p
+                class="
+                    max-w-md
+                    text-sm
+                    leading-7
+                    text-[#18312F]/55
+                "
+            >
+                From precision hair styling to beauty and aesthetic
+                treatments, discover services selected around how you
+                want to look and feel.
+            </p>
+        </div>
+
+
+        <!-- Service grid -->
+        <div
+            class="
+                mt-12 grid
+                gap-x-6 gap-y-12
+                sm:grid-cols-2
+                lg:grid-cols-4
+            "
+        >
+
+            <!-- Hair -->
+            <article class="group">
+                <a href="/services#hair" class="block">
+                    <div class="aspect-4/5 overflow-hidden bg-zinc-200">
+                        <img
+                            src="/static/images/abundant-blowout-aveda-november-2025-1024x630.jpeg"
+                            alt="Professional hair styling"
+                            loading="lazy"
+                            class="
+                                size-full object-cover
+                                transition duration-500
+                                group-hover:scale-[1.03]
+                            "
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p
+                                    class="
+                                        text-[0.6rem]
+                                        font-semibold
+                                        uppercase
+                                        tracking-[0.24em]
+                                        text-[#218F86]
+                                    "
+                                >
+                                    01
+                                </p>
+
+                                <h3
+                                    class="
+                                        mt-2
+                                        text-lg
+                                        font-medium
+                                        text-[#18312F]
+                                    "
+                                >
+                                    Hair
+                                </h3>
+                            </div>
+
+                            <span
+                                class="
+                                    text-xl
+                                    text-[#18312F]/35
+                                    transition
+                                    group-hover:translate-x-1
+                                    group-hover:text-[#218F86]
+                                "
+                                aria-hidden="true"
+                            >
+                                →
+                            </span>
+                        </div>
+
+                        <p class="mt-3 text-sm leading-6 text-[#18312F]/55">
+                            Cutting, styling, colour, highlights and
+                            personalised colour services.
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+
+            <!-- Beauty -->
+            <article class="group">
+                <a href="/services#beauty" class="block">
+                    <div class="aspect-4/5 overflow-hidden bg-zinc-200">
+                        <img
+                            src="/static/images/beauty-treatment.jpeg"
+                            alt="Professional beauty treatment"
+                            loading="lazy"
+                            class="
+                                size-full object-cover
+                                transition duration-500
+                                group-hover:scale-[1.03]
+                            "
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p
+                                    class="
+                                        text-[0.6rem]
+                                        font-semibold
+                                        uppercase
+                                        tracking-[0.24em]
+                                        text-[#218F86]
+                                    "
+                                >
+                                    02
+                                </p>
+
+                                <h3 class="mt-2 text-lg font-medium text-[#18312F]">
+                                    Beauty
+                                </h3>
+                            </div>
+
+                            <span
+                                class="
+                                    text-xl
+                                    text-[#18312F]/35
+                                    transition
+                                    group-hover:translate-x-1
+                                    group-hover:text-[#218F86]
+                                "
+                                aria-hidden="true"
+                            >
+                                →
+                            </span>
+                        </div>
+
+                        <p class="mt-3 text-sm leading-6 text-[#18312F]/55">
+                            Considered treatments designed around relaxation,
+                            confidence and self-care.
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+
+            <!-- Aesthetics -->
+            <article class="group">
+                <a href="/services#aesthetics" class="block">
+                    <div class="aspect-4/5 overflow-hidden bg-zinc-200">
+                        <img
+                            src="/static/images/aesthetic-beauty-treatment.webp"
+                            alt="Aesthetic beauty treatment"
+                            loading="lazy"
+                            class="
+                                size-full object-cover
+                                transition duration-500
+                                group-hover:scale-[1.03]
+                            "
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p
+                                    class="
+                                        text-[0.6rem]
+                                        font-semibold
+                                        uppercase
+                                        tracking-[0.24em]
+                                        text-[#218F86]
+                                    "
+                                >
+                                    03
+                                </p>
+
+                                <h3 class="mt-2 text-lg font-medium text-[#18312F]">
+                                    Aesthetics
+                                </h3>
+                            </div>
+
+                            <span
+                                class="
+                                    text-xl
+                                    text-[#18312F]/35
+                                    transition
+                                    group-hover:translate-x-1
+                                    group-hover:text-[#218F86]
+                                "
+                                aria-hidden="true"
+                            >
+                                →
+                            </span>
+                        </div>
+
+                        <p class="mt-3 text-sm leading-6 text-[#18312F]/55">
+                            Professional treatments delivered with a subtle,
+                            considered approach.
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+
+            <!-- Brows & Lashes -->
+            <article class="group">
+                <a href="/services#brows" class="block">
+                    <div class="aspect-4/5verflow-hidden bg-zinc-200">
+                        <img
+                            src="/static/images/brow&lash.jpg"
+                            alt="Professional brow and lash treatment"
+                            loading="lazy"
+                            class="
+                                size-full object-cover
+                                transition duration-500
+                                group-hover:scale-[1.03]
+                            "
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p
+                                    class="
+                                        text-[0.6rem]
+                                        font-semibold
+                                        uppercase
+                                        tracking-[0.24em]
+                                        text-[#218F86]
+                                    "
+                                >
+                                    04
+                                </p>
+
+                                <h3 class="mt-2 text-lg font-medium text-[#18312F]">
+                                    Brows & Lashes
+                                </h3>
+                            </div>
+
+                            <span
+                                class="
+                                    text-xl
+                                    text-[#18312F]/35
+                                    transition
+                                    group-hover:translate-x-1
+                                    group-hover:text-[#218F86]
+                                "
+                                aria-hidden="true"
+                            >
+                                →
+                            </span>
+                        </div>
+
+                        <p class="mt-3 text-sm leading-6 text-[#18312F]/55">
+                            Defined brows, lashes and finishing treatments
+                            tailored to your features.
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+========================================================= -->
+<section class="bg-[#1D7771] text-white">
+    <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-24">
+
+        <div class="max-w-xl">
+            <p
+                class="
+                    text-[0.65rem]
+                    font-semibold
+                    uppercase
+                    tracking-[0.3em]
+                    text-white/55
+                "
+            >
+                Why Studio Hair
+            </p>
+
+            <h2
+                class="
+                    mt-5
+                    text-3xl
+                    font-medium
+                    leading-tight
+                    tracking-[-0.03em]
+                    sm:text-4xl
+                "
+            >
+                Expertise without the attitude.
+            </h2>
+        </div>
+
+
+        <div
+            class="
+                mt-14 grid
+                border-t border-white/15
+                sm:grid-cols-2
+                lg:grid-cols-4
+            "
+        >
+
+            <article
+                class="
+                    border-b border-white/15
+                    py-8
+                    sm:border-r sm:px-6
+                    sm:first:pl-0
+                    lg:border-b-0
+                "
+            >
+                <span class="text-[0.6rem] font-semibold tracking-[0.25em] text-white/40">
+                    01
+                </span>
+
+                <h3 class="mt-6 text-lg font-medium">
+                    Personal
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-white/60">
+                    Every appointment begins with listening to what
+                    you actually want.
+                </p>
+            </article>
+
+
+            <article
+                class="
+                    border-b border-white/15
+                    py-8
+                    sm:px-6
+                    lg:border-r
+                    lg:border-b-0
+                "
+            >
+                <span class="text-[0.6rem] font-semibold tracking-[0.25em] text-white/40">
+                    02
+                </span>
+
+                <h3 class="mt-6 text-lg font-medium">
+                    Experienced
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-white/60">
+                    Skilled professionals bringing experience,
+                    precision and care to every treatment.
+                </p>
+            </article>
+
+
+            <article
+                class="
+                    border-b border-white/15
+                    py-8
+                    sm:border-r sm:px-6
+                    lg:border-b-0
+                "
+            >
+                <span class="text-[0.6rem] font-semibold tracking-[0.25em] text-white/40">
+                    03
+                </span>
+
+                <h3 class="mt-6 text-lg font-medium">
+                    Complete
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-white/60">
+                    Hair, beauty, aesthetics, brows and lashes
+                    together in one considered studio.
+                </p>
+            </article>
+
+
+            <article class="py-8 sm:px-6 sm:last:pr-0">
+                <span class="text-[0.6rem] font-semibold tracking-[0.25em] text-white/40">
+                    04
+                </span>
+
+                <h3 class="mt-6 text-lg font-medium">
+                    Welcoming
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-white/60">
+                    A relaxed space where great service matters
+                    more than pretence.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+<section class="bg-[#FAF9F6]">
+    <div
+        class="
+            mx-auto grid max-w-6xl
+            gap-12
+            px-4 py-20
+            sm:px-6
+            md:py-28
+            lg:grid-cols-2
+            lg:items-center
+            lg:gap-20
+            lg:py-32
+        "
+    >
+
+        <!-- Image -->
+        <div class="relative">
+            <div class="aspect-4/5 overflow-hidden bg-zinc-200">
+                <img
+                    src="/static/images/salon-hero.jpeg"
+                    alt="Inside Studio Hair & Beauty"
+                    loading="lazy"
+                    class="size-full object-cover"
+                >
+            </div>
+
+            <!-- restrained accent -->
+            <div
+                class="
+                    absolute -bottom-5 -right-3
+                    hidden
+                    bg-[#26A69A]
+                    px-7 py-6
+                    text-white
+                    sm:block
+                    lg:-right-6
+                "
+            >
+                <span
+                    class="
+                        block text-[0.6rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.25em]
+                        text-white/65
+                    "
+                >
+                    Our Philosophy
+                </span>
+
+                <span class="mt-2 block text-lg font-medium">
+                    Look · Feel · Be You
+                </span>
+            </div>
+        </div>
+
+
+        <!-- Copy -->
+        <div>
+            <p
+                class="
+                    text-[0.65rem]
+                    font-semibold
+                    uppercase
+                    tracking-[0.3em]
+                    text-[#218F86]
+                "
+            >
+                About the Studio
+            </p>
+
+            <h2
+                class="
+                    mt-5
+                    max-w-xl
+                    text-3xl
+                    font-medium
+                    leading-[1.15]
+                    tracking-[-0.03em]
+                    text-[#18312F]
+                    sm:text-4xl
+                    lg:text-5xl
+                "
+            >
+                A salon built around
+                <span class="text-[#18312F]/45">
+                    the people who walk through its doors.
+                </span>
+            </h2>
+
+            <div
+                class="
+                    mt-8 space-y-5
+                    text-sm
+                    leading-7
+                    text-[#18312F]/60
+                "
+            >
+                <p>
+                    Studio Hair & Beauty brings hair and beauty
+                    professionals together in one welcoming space,
+                    combining individual expertise with a shared
+                    commitment to quality.
+                </p>
+
+                <p>
+                    Our approach is simple: understand the person,
+                    recommend thoughtfully and deliver work that feels
+                    every bit as good as it looks.
+                </p>
+            </div>
+
+            <div class="mt-9 flex flex-wrap gap-7">
+                <a
+                    href="/team"
+                    class="
+                        inline-flex
+                        bg-[#18312F]
+                        px-6 py-4
+                        text-[0.7rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.18em]
+                        text-white
+                        transition
+                        hover:bg-[#218F86]
+                    "
+                >
+                    Meet Our Team
+                </a>
+
+                <a
+                    href="/gallery"
+                    class="
+                        self-center
+                        border-b border-[#18312F]/30
+                        pb-1
+                        text-[0.7rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.16em]
+                        text-[#18312F]/70
+                        transition
+                        hover:border-[#218F86]
+                        hover:text-[#218F86]
+                    "
+                >
+                    View Gallery
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     TESTIMONIALS
+========================================================= -->
+<section class="border-y border-[#18312F]/10 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28">
+
+        <div
+            class="
+                flex flex-col gap-6
+                md:flex-row
+                md:items-end
+                md:justify-between
+            "
+        >
+            <div>
+                <p
+                    class="
+                        text-[0.65rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.3em]
+                        text-[#218F86]
+                    "
+                >
+                    Client Experience
+                </p>
+
+                <h2
+                    class="
+                        mt-5
+                        text-3xl
+                        font-medium
+                        tracking-[-0.03em]
+                        text-[#18312F]
+                        sm:text-4xl
+                    "
+                >
+                    The kind of results
+                    <span class="text-[#18312F]/45">
+                        worth talking about.
+                    </span>
+                </h2>
+            </div>
+
+            <a
+                href="/contact"
+                class="
+                    hidden
+                    border-b border-[#218F86]
+                    pb-1
+                    text-[0.7rem]
+                    font-semibold
+                    uppercase
+                    tracking-[0.16em]
+                    text-[#218F86]
+                    md:inline-flex
+                "
+            >
+                Visit the Studio
+            </a>
+        </div>
+
+
+        <!--
+            Demo testimonials for the fictional rebuild.
+            Replace with verified reviews if this becomes a real client site.
+        -->
+        <div
+            class="
+                mt-14 grid
+                border-t border-[#18312F]/10
+                md:grid-cols-3
+            "
+        >
+
+            <blockquote
+                class="
+                    border-b border-[#18312F]/10
+                    py-9
+                    md:border-r md:border-b-0
+                    md:pr-9
+                "
+            >
+                <span class="text-4xl font-light leading-none text-[#26A69A]" aria-hidden="true">
+                    “
+                </span>
+
+                <p class="mt-5 text-base leading-8 text-[#18312F]/70">
+                    A calm, welcoming experience from consultation to finish.
+                    I left feeling completely looked after.
+                </p>
+
+                <footer
+                    class="
+                        mt-8
+                        text-[0.65rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.2em]
+                        text-[#18312F]/40
+                    "
+                >
+                    Example client
+                </footer>
+            </blockquote>
+
+
+            <blockquote
+                class="
+                    border-b border-[#18312F]/10
+                    py-9
+                    md:border-r md:border-b-0
+                    md:px-9
+                "
+            >
+                <span class="text-4xl font-light leading-none text-[#26A69A]" aria-hidden="true">
+                    “
+                </span>
+
+                <p class="mt-5 text-base leading-8 text-[#18312F]/70">
+                    Professional without ever feeling clinical. The team
+                    understood exactly what I wanted.
+                </p>
+
+                <footer
+                    class="
+                        mt-8
+                        text-[0.65rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.2em]
+                        text-[#18312F]/40
+                    "
+                >
+                    Example client
+                </footer>
+            </blockquote>
+
+
+            <blockquote class="py-9 md:pl-9">
+                <span class="text-4xl font-light leading-none text-[#26A69A]" aria-hidden="true">
+                    “
+                </span>
+
+                <p class="mt-5 text-base leading-8 text-[#18312F]/70">
+                    Beautiful result, friendly atmosphere and genuinely
+                    thoughtful service. Exactly what a salon should feel like.
+                </p>
+
+                <footer
+                    class="
+                        mt-8
+                        text-[0.65rem]
+                        font-semibold
+                        uppercase
+                        tracking-[0.2em]
+                        text-[#18312F]/40
+                    "
+                >
+                    Example client
+                </footer>
+            </blockquote>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     FINAL BOOKING CTA
+========================================================= -->
+<section class="bg-[#18312F] text-white">
+    <div
+        class="
+            mx-auto flex max-w-6xl
+            flex-col
+            gap-10
+            px-4 py-20
+            sm:px-6
+            md:py-24
+            lg:flex-row
+            lg:items-end
+            lg:justify-between
+        "
+    >
+        <div class="max-w-2xl">
+            <p
+                class="
+                    text-[0.65rem]
+                    font-semibold
+                    uppercase
+                    tracking-[0.3em]
+                    text-[#5FC8BE]
+                "
+            >
+                Your Time
+            </p>
+
+            <h2
+                class="
+                    mt-5
+                    text-3xl
+                    font-medium
+                    leading-tight
+                    tracking-[-0.03em]
+                    sm:text-4xl
+                    lg:text-5xl
+                "
+            >
+                Ready for your next appointment?
+            </h2>
+
+            <p
+                class="
+                    mt-6
+                    max-w-xl
+                    text-sm
+                    leading-7
+                    text-white/55
+                "
+            >
+                Find the right treatment, choose a time that works
+                for you and let us take care of the rest.
+            </p>
+        </div>
+
+        <a
+            href="/contact"
+            class="
+                inline-flex shrink-0
+                items-center justify-center
+                bg-[#26A69A]
+                px-8 py-4
+                text-[0.7rem]
+                font-semibold
+                uppercase
+                tracking-[0.18em]
+                text-white
+                transition
+                hover:bg-[#35B8AC]
+            "
+        >
+            Book an Appointment
+        </a>
+    </div>
+</section>
+
 {{ end }}
