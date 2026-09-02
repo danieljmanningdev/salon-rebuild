@@ -5,6 +5,8 @@
 
 A fictional contemporary salon website built as a portfolio and retrospective design exercise.
 
+[View the Full Salon Rebuild](https://salon-rebuild.onrender.com/)
+
 The project revisits the type of salon website work I produced early in my freelance career and explores how I would approach the same broad category today using a more considered UI/UX and engineering process.
 
 ## Scope
