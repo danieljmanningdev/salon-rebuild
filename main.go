@@ -10,16 +10,22 @@ import (
 )
 
 func main() {
-	homeTemplate := template.Must(template.ParseFiles(
-		"templates/layouts/base.html",
-		"templates/components/header.html",
-		"templates/components/footer.html",
-		"templates/pages/home.html",
-	))
+	loadPage := func(page string) *template.Template {
+		return template.Must(template.ParseFiles(
+			"templates/layouts/base.html",
+			"templates/components/header.html",
+			"templates/components/footer.html",
+			"templates/pages/"+page+".html",
+		))
+	}
 
 	h := &handlers.Handler{
 		Templates: map[string]*template.Template{
-			"home": homeTemplate,
+			"home":     loadPage("home"),
+			"services": loadPage("services"),
+			"team":     loadPage("team"),
+			"gallery":  loadPage("gallery"),
+			"contact":  loadPage("contact"),
 		},
 	}
 
