@@ -32,8 +32,6 @@ func main() {
 
 	mux := routes.Routes(h)
 
-	log.Println("Server running on http://localhost:8080")
-
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
