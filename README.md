@@ -1,5 +1,8 @@
 # salon-rebuild
 
+![Salon Rebuild Home Page](static/images/salon-rebuild-home.png)
+![Salon Rebuild Services](static/images/salon-rebuild-services.png)
+
 A fictional contemporary salon website built as a portfolio and retrospective design exercise.
 
 The project revisits the type of salon website work I produced early in my freelance career and explores how I would approach the same broad category today using a more considered UI/UX and engineering process.
