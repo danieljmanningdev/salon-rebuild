@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 
 	"salon-rebuild/internal/handlers"
 	"salon-rebuild/internal/routes"
@@ -33,7 +34,16 @@ func main() {
 
 	log.Println("Server running on http://localhost:8080")
 
-	if err := http.ListenAndServe(":8080", mux); err != nil {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	addr := ":" + port
+
+	log.Printf("Server running on %s", addr)
+
+	if err := http.ListenAndServe(addr, mux); err != nil {
 		log.Fatal(err)
 	}
 }
