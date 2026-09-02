@@ -33,6 +33,10 @@ The goal is to demonstrate the difference between an early freelance salon proje
 
 Current versions of this project are © 2026 Daniel J. Manning. All rights reserved.
 
-This repository is public for portfolio and educational viewing only. No permission is granted to copy, modify, redistribute, publish, sublicense, sell, or use the project or its design without prior written permission.
+This repository is public for portfolio and educational viewing only.
+No permission is granted to copy, modify, redistribute, publish, sublicense,
+sell, or use the project or its design without prior written permission.
 
-Earlier versions of this repository were released under the MIT License. Those versions remain subject to the licence terms under which they were originally published.
+Earlier versions of this repository were released under the MIT License.
+Those versions remain subject to the licence terms under which they were
+originally published.
